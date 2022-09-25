@@ -99,8 +99,10 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ 0, XF86XK_AudioRaiseVolume,	spawn,		SHCMD("amixer set Master 5%+ ; pkill -RTMIN+10 dwmblocks") },
-	{ 0, XF86XK_AudioLowerVolume,	spawn,		SHCMD("amixer set Master 5%- ; pkill -RTMIN+10 dwmblocks") },
+	{ 0, XF86XK_AudioRaiseVolume,	spawn, SHCMD("amixer set Master 5%+ ; pkill -RTMIN+10 dwmblocks") },
+	{ 0, XF86XK_AudioLowerVolume,	spawn, SHCMD("amixer set Master 5%- ; pkill -RTMIN+10 dwmblocks") },
+  // screenshot to clipboard
+	{ ShiftMask, XK_Print,        spawn, SHCMD("maim -s -q --hidecursor | xclip -selection clipboard -t image/png") },
 };
 
 /* button definitions */
