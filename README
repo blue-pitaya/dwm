@@ -9,6 +9,7 @@ In order to build dwm you need the Xlib header files.
 
 my note:
 You also need ttf-iosevka font. For arch users: https://aur.archlinux.org/packages/ttf-iosevka
+And Symbols Nerd Font (https://archlinux.org/packages/community/any/ttf-nerd-fonts-symbols-1000-em/)
 
 
 Installation
